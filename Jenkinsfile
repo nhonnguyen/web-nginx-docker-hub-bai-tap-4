@@ -8,7 +8,7 @@ pipeline {
         DOCKER_ENDPOINT = "nhontrnguyen" //Docker user Hub hoac Docker Private Resistry ENDPOINT
         DOCKER_NAME = "nginx-jenkins-1-staging"
         VERSION = "1.0"
-        TAG = "${VERSION}.${env.BUILD_NUMBER}"
+        TAG = "${VERSION}.${env.BUILD_NUMBER}-staging"
         IMAGE_NAME = "${DOCKER_ENDPOINT}/${DOCKER_NAME}"
         SSH_USER = "admin01"
         }
